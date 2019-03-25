@@ -78,7 +78,7 @@ class CustomListener extends Listener {
 		int diff = (int) (leftPos.getY() - rightPos.getY());
 		//System.out.println(diff);
 
-			if (diff < -2) {
+			if (diff < -7) {
 				robot.keyPress(KeyEvent.VK_LEFT);
 				try {
 					Thread.sleep((int)Math.abs(diff*0.25));
@@ -87,7 +87,7 @@ class CustomListener extends Listener {
 				}
 				//System.out.println("leftkey pressed" + diff);
 				robot.keyRelease(KeyEvent.VK_LEFT);
-			}else if (diff > 5) {
+			}else if (diff > 10) {
 				robot.keyPress(KeyEvent.VK_RIGHT);
 				try {
 					Thread.sleep((int)Math.abs(diff*0.25));
